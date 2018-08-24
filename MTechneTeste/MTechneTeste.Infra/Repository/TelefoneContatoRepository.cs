@@ -5,9 +5,9 @@ using NHibernate;
 
 namespace MTechneTeste.Infra.Repository
 {
-    public class ClasseExemploRepository : BaseDB<ClasseExemplo>, IClasseExemploRepository
+    public class TelefoneContatoRepository : BaseDB<TelefoneContato>, ITelefoneContatoRepository
     {
-        public ClasseExemploRepository(ISessionFactory sessionFactory) : base(sessionFactory)
+        public TelefoneContatoRepository(ISessionFactory sessionFactory) : base(sessionFactory)
         {
 
         }

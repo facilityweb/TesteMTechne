@@ -74,13 +74,19 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Mapping\ClasseExemploMapping.cs" />
+    <Compile Include="Mapping\ClassificacaoMapping.cs" />
+    <Compile Include="Mapping\ContatoMapping.cs" />
+    <Compile Include="Mapping\EmailContatoMapping.cs" />
+    <Compile Include="Mapping\TelefoneContatoMapping.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="RepositoryModule.cs" />
     <Compile Include="Repository\Base\BaseDB.cs" />
     <Compile Include="Repository\Base\DatabaseKeys.cs" />
     <Compile Include="Repository\Base\NHibernateSessionHelper.cs" />
-    <Compile Include="Repository\ClasseExemploRepository.cs" />
+    <Compile Include="Repository\ClassificacaoRepository.cs" />
+    <Compile Include="Repository\ContatoRepository.cs" />
+    <Compile Include="Repository\EmailContatoRepository.cs" />
+    <Compile Include="Repository\TelefoneContatoRepository.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />

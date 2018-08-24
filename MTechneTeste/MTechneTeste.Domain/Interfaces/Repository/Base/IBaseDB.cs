@@ -48,7 +48,7 @@ namespace MTechneTeste.Domain.Interfaces.Repository.Base
         ///Salva uma entidade no escopo de uma transação ( é necessário o flush e commit durante o processo)
         /// </summary>
         /// <remarks>Criado por Igor Monteiro </remarks>
-        void SaveInUniqueTransaction(T entity);
+        void SaveInTransaction(T entity);
         /// <summary>
         ///Salva ou edita uma entidade no escopo de uma transação ( é necessário o flush e commit durante o processo)
         /// </summary>

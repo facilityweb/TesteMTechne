@@ -161,7 +161,7 @@ namespace MTechneTeste.Infra.Repository.Base
             }
         }
 
-        public virtual void SaveInUniqueTransaction(T entity)
+        public virtual void SaveInTransaction(T entity)
         {
             this.Session.Save(entity);
         }

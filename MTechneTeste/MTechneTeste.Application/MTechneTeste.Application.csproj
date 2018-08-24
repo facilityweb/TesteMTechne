@@ -57,13 +57,17 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="AppServices\ClasseExemploApplication.cs" />
+    <Compile Include="ApplicationModule.cs" />
+    <Compile Include="AppServices\ContatoApplication.cs" />
     <Compile Include="AutoMapper\AutoMapperConfig.cs" />
     <Compile Include="AutoMapper\DomainToViewModelProfile.cs" />
     <Compile Include="AutoMapper\ViewModelToDomainProfile.cs" />
-    <Compile Include="Interfaces\IClasseExemploApplication.cs" />
+    <Compile Include="Interfaces\IContatoApplication.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="ViewModels\ClasseExemploViewModel.cs" />
+    <Compile Include="ViewModels\ClassificacaoViewModel.cs" />
+    <Compile Include="ViewModels\ContatoViewModel.cs" />
+    <Compile Include="ViewModels\EmailContatoViewModel.cs" />
+    <Compile Include="ViewModels\TelefoneContatoViewModel.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
@@ -72,6 +76,10 @@
     <ProjectReference Include="..\MTechneTeste.Domain\MTechneTeste.Domain.csproj">
       <Project>{EBECF856-68E8-415D-B447-CF04B9A3A7E9}</Project>
       <Name>MTechneTeste.Domain</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\MTechneTeste.Infra\MTechneTeste.Infra.csproj">
+      <Project>{3DCA5140-E979-49CD-B9F9-D7D5AE4AD3E8}</Project>
+      <Name>MTechneTeste.Infra</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

@@ -8,7 +8,10 @@ namespace MTechneTeste.Application.AutoMapper
     {
         public ViewModelToDomainProfile()
         {
-            CreateMap<ClasseExemploViewModel, ClasseExemplo>();
+            CreateMap<ClassificacaoViewModel, Classificacao>();
+            CreateMap<ContatoViewModel, Contato>();
+            CreateMap<TelefoneContatoViewModel, TelefoneContato>();
+            CreateMap<EmailContatoViewModel, EmailContato>();
         }
     }
 }

@@ -4,10 +4,10 @@ using MTechneTeste.Domain.Services.Base;
 
 namespace MTechneTeste.Domain.Services
 {
-    public class ClasseExemploService : BaseService<ClasseExemplo>
+    public class ClassificacaoService : BaseService<Classificacao>
     {
-        private readonly IClasseExemploRepository classeExemploRepository;
-        public ClasseExemploService(IClasseExemploRepository classeExemploRepository)
+        private readonly IClassificacaoRepository classeExemploRepository;
+        public ClassificacaoService(IClassificacaoRepository classeExemploRepository)
         {
             this.classeExemploRepository = classeExemploRepository;
         }

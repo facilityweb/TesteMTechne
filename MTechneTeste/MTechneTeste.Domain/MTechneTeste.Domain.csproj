@@ -56,14 +56,20 @@
   <ItemGroup>
     <Compile Include="Entities\Base\Entity.cs" />
     <Compile Include="Entities\Base\IBaseId.cs" />
-    <Compile Include="Entities\ClasseExemplo.cs" />
+    <Compile Include="Entities\Classificacao.cs" />
+    <Compile Include="Entities\Contato.cs" />
+    <Compile Include="Entities\EmailContato.cs" />
+    <Compile Include="Entities\TelefoneContato.cs" />
     <Compile Include="Interfaces\Repository\Base\IBaseDB.cs" />
-    <Compile Include="Interfaces\Repository\IClasseExemploRepository.cs" />
+    <Compile Include="Interfaces\Repository\IContatoRepository.cs" />
+    <Compile Include="Interfaces\Repository\IClassificacaoRepository.cs" />
+    <Compile Include="Interfaces\Repository\IEmailContatoRepository.cs" />
+    <Compile Include="Interfaces\Repository\ITelefoneContatoRepository.cs" />
     <Compile Include="Interfaces\Services\Base\IBaseService.cs" />
-    <Compile Include="Interfaces\Services\IClasseExemploService.cs" />
+    <Compile Include="Interfaces\Services\IClassificacaoService.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Services\Base\BaseService.cs" />
-    <Compile Include="Services\ClasseExemploService.cs" />
+    <Compile Include="Services\ClassificacaoService.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
