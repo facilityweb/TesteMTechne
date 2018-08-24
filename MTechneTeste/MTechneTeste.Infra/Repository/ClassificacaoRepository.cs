@@ -7,7 +7,7 @@ namespace MTechneTeste.Infra.Repository
 {
     public class ClassificacaoRepository : BaseDB<Classificacao>, IClassificacaoRepository
     {
-        public ClassificacaoRepository(ISessionFactory sessionFactory) : base(sessionFactory)
+        public ClassificacaoRepository() : base()
         {
 
         }

@@ -9,6 +9,7 @@ namespace MTechneTeste.Infra.Repository.Base
 {
     public class NHibernateSessionHelper
     {
+        public static ISession Session { get; set; }
         private static object syncObject = new object();
         public static Dictionary<string, ISessionFactory> factories;
 

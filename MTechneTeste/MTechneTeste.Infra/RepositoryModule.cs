@@ -16,7 +16,9 @@ namespace MTechneTeste.Infra
             if (ConfigurationManager.AppSettings["StarkDb"] == null) throw new ApplicationException("Tipo do Banco não informado.");
             if (ConfigurationManager.ConnectionStrings["StarkDb"] == null) throw new ApplicationException("ConnectionString StarkDB não informads.");
 
-            builder.Register(x => NHibernateSessionHelper.GetFactory(typeof(ClassificacaoMapping), ConfigurationManager.AppSettings["StarkDb"], ConfigurationManager.ConnectionStrings["StarkDb"].ConnectionString)).As<ISessionFactory>().SingleInstance();
+            NHibernateSessionHelper.Session = NHibernateSessionHelper.GetFactory(typeof(ClassificacaoMapping), ConfigurationManager.AppSettings["StarkDb"], ConfigurationManager.ConnectionStrings["StarkDb"].ConnectionString).OpenSession();
+
+            //builder.Register(x => NHibernateSessionHelper.GetFactory(typeof(ClassificacaoMapping), ConfigurationManager.AppSettings["StarkDb"], ConfigurationManager.ConnectionStrings["StarkDb"].ConnectionString)).As<ISessionFactory>().SingleInstance();
             builder.RegisterType<ContatoRepository>().As<IContatoRepository>();
             builder.RegisterType<ClassificacaoRepository>().As<IClassificacaoRepository>();
             builder.RegisterType<EmailContatoRepository>().As<IEmailContatoRepository>();

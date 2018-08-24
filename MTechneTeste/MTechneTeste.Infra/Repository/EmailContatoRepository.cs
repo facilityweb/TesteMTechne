@@ -7,7 +7,7 @@ namespace MTechneTeste.Infra.Repository
 {
     public class EmailContatoRepository : BaseDB<EmailContato>, IEmailContatoRepository
     {
-        public EmailContatoRepository(ISessionFactory sessionFactory) : base(sessionFactory)
+        public EmailContatoRepository() : base()
         {
 
         }

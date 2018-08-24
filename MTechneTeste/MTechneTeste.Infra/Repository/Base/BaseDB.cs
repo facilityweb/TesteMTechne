@@ -14,9 +14,9 @@ namespace MTechneTeste.Infra.Repository.Base
     {
         public readonly ISession Session;
         private ITransaction transaction = null;
-        public BaseDB(ISessionFactory sessionFactory)
+        public BaseDB()
         {
-            this.Session = sessionFactory.OpenSession();
+            this.Session = NHibernateSessionHelper.Session;
         }
         public virtual async Task DeleteAsync(T entity)
         {

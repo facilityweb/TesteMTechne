@@ -7,7 +7,7 @@ namespace MTechneTeste.Infra.Repository
 {
     public class ContatoRepository : BaseDB<Contato>, IContatoRepository
     {
-        public ContatoRepository(ISessionFactory sessionFactory) : base(sessionFactory)
+        public ContatoRepository() : base()
         {
 
         }
