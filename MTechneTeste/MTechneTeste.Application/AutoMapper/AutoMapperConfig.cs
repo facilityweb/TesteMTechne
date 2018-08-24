@@ -1,6 +1,6 @@
 ﻿using AutoMapper;
 
-namespace .Application.AutoMapper
+namespace MTechneTeste.Application.AutoMapper
 {
     public class AutoMapperConfig
     {

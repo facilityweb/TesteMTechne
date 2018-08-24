@@ -1,5 +1,5 @@
 ﻿using FluentNHibernate.Mapping;
-using .Domain.Entities;
+using MTechneTeste.Domain.Entities;
 
 namespace MTechneTeste.Infra.Mapping
 {

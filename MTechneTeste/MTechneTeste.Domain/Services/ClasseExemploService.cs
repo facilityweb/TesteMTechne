@@ -1,10 +1,10 @@
-﻿using Stark.Domain.Services;
-using .Domain.Interfaces.Repository;
-using .Domain.Entities;
+﻿using MTechneTeste.Domain.Entities;
+using MTechneTeste.Domain.Interfaces.Repository;
+using MTechneTeste.Domain.Services.Base;
 
 namespace MTechneTeste.Domain.Services
 {
-    public class ClasseExemploService : StarkService<ClasseExemplo>
+    public class ClasseExemploService : BaseService<ClasseExemplo>
     {
         private readonly IClasseExemploRepository classeExemploRepository;
         public ClasseExemploService(IClasseExemploRepository classeExemploRepository)

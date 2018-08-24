@@ -1,9 +1,10 @@
-﻿using .Domain.Entities;
-using Stark.Domain.Interfaces.Repository;
+﻿
+using MTechneTeste.Domain.Entities;
+using MTechneTeste.Domain.Interfaces.Repository.Base;
 
-namespace .Domain.Interfaces.Repository
+namespace MTechneTeste.Domain.Interfaces.Repository
 {
-    public interface IClasseExemploRepository : IStarkDB<ClasseExemplo>
+    public interface IClasseExemploRepository : IBaseDB<ClasseExemplo>
     {
     }
 }

@@ -1,10 +1,7 @@
-﻿using .Application.ViewModels;
-using .Domain.Entities;
-using Stark.Application.Interfaces;
-
-namespace .Application.Interfaces
+﻿
+namespace MTechneTeste.Application.Interfaces
 {
-    public interface IClasseExemploApplication : IBaseApplication<ClasseExemplo, ClasseExemploViewModel>
+    public interface IClasseExemploApplication 
     {
     }
 }

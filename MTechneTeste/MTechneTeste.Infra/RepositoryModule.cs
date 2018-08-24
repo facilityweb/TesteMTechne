@@ -1,9 +1,9 @@
 ﻿using Autofac;
 using NHibernate;
-using .Infra.Mapping;
+using MTechneTeste.Infra.Mapping;
 using System;
 using System.Configuration;
-using Stark.Infra;
+using MTechneTeste.Infra.Repository.Base;
 
 namespace MTechneTeste.Infra
 {

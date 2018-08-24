@@ -1,8 +1,7 @@
-﻿using Stark.Application.ViewModels;
-
-namespace .Application.ViewModels
+﻿
+namespace MTechneTeste.Application.ViewModels
 {
-    public class ClasseExemploViewModel : BaseViewModel
+    public class ClasseExemploViewModel
     {
     }
 }

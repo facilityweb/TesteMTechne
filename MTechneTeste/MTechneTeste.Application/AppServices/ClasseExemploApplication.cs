@@ -1,17 +1,13 @@
-﻿using .Application.Interfaces;
-using .Application.ViewModels;
-using .Domain.Entities;
-using .Domain.Interfaces.Services;
-using Stark.Application.AppServices;
+﻿
 
-namespace .Application.AppServices
+namespace MTechneTeste.Application.AppServices
 {
-    public class ClasseExemploApplication : BaseApplication<ClasseExemplo, ClasseExemploViewModel>, IClasseExemploApplication
+    public class ClasseExemploApplication
     {
-        private readonly IClasseExemploService classeExemploService;
-        public ClasseExemploApplication(IClasseExemploService classeExemploService)
-        {
-            this.classeExemploService = classeExemploService;
-        }
+        //private readonly IClasseExemploService classeExemploService;
+        //public ClasseExemploApplication(IClasseExemploService classeExemploService)
+        //{
+        //    this.classeExemploService = classeExemploService;
+        //}
     }
 }

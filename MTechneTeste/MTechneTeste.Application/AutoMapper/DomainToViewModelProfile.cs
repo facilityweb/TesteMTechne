@@ -1,8 +1,8 @@
 ﻿using AutoMapper;
-using .Application.ViewModels;
-using .Domain.Entities;
+using MTechneTeste.Application.ViewModels;
+using MTechneTeste.Domain.Entities;
 
-namespace .Application.AutoMapper
+namespace MTechneTeste.Application.AutoMapper
 {
     public class DomainToViewModelProfile : Profile
     {

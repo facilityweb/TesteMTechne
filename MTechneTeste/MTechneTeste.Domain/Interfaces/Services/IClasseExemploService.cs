@@ -1,10 +1,9 @@
-﻿using Stark.Domain.Interfaces.Services;
-using .Domain.Entities;
-
+﻿using MTechneTeste.Domain.Entities;
+using MTechneTeste.Domain.Interfaces.Services.Base;
 
 namespace MTechneTeste.Domain.Interfaces.Services
 {
-    public interface IClasseExemploService : IStarkService<ClasseExemplo>
+    public interface IClasseExemploService : IBaseService<ClasseExemplo>
     {
     }
 }

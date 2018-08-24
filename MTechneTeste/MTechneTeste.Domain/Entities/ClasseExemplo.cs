@@ -1,8 +1,7 @@
 ﻿using FluentValidation;
-using Stark.Domain;
-using Stark.Domain.Entities.Base;
+using MTechneTeste.Domain.Entities.Base;
 
-namespace .Domain.Entities
+namespace MTechneTeste.Domain.Entities
 {
     public class ClasseExemplo : Entity, IBaseId
     {
