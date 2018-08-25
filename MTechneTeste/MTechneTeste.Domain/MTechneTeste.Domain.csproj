@@ -67,6 +67,7 @@
     <Compile Include="Interfaces\Repository\ITelefoneContatoRepository.cs" />
     <Compile Include="Interfaces\Services\Base\IBaseService.cs" />
     <Compile Include="Interfaces\Services\IClassificacaoService.cs" />
+    <Compile Include="IOC\MTechneContainer.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Services\Base\BaseService.cs" />
     <Compile Include="Services\ClassificacaoService.cs" />

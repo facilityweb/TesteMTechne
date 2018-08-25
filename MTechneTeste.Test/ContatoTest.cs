@@ -7,21 +7,21 @@ using MTechneTeste.Application.Interfaces;
 using MTechneTeste.Application.ViewModels;
 using MTechneTeste.Domain.Entities;
 using MTechneTeste.Domain.Interfaces.Repository;
+using MTechneTeste.Domain.IOC;
 
 namespace MTechneTeste.Test
 {
     [TestClass]
     public class ContatoTest
     {
-        private readonly IContainer container;
         public ContatoTest()
         {
-            container = ContainerConfig.Configure();
+            MTechneContainer.Container = ContainerConfig.Configure();
         }
         [TestMethod]
         public void SalvarContatoTest()
         {
-            var classificacoes = container.Resolve<IClassificacaoRepository>().GetAll();
+            var classificacoes = MTechneContainer.Container.Resolve<IClassificacaoRepository>().GetAll();
             var contato = new ContatoViewModel()
             {
                 Nome = "Igor de Andrade Monteiro",
@@ -38,7 +38,7 @@ namespace MTechneTeste.Test
                 }
             };
 
-            ContatoViewModel contatoSalvo = container.Resolve<IContatoApplication>().Salvar(contato);
+            ContatoViewModel contatoSalvo = MTechneContainer.Container.Resolve<IContatoApplication>().Salvar(contato);
 
             Assert.AreNotEqual(0, contatoSalvo.Id);
             Assert.AreNotEqual(0, contatoSalvo.Telefones[0].Id);
