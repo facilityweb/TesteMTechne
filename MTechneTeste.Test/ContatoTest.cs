@@ -47,5 +47,12 @@ namespace MTechneTeste.Test
             Assert.AreNotEqual(0, contatoSalvo.Emails[0].ContatoId);
 
         }
+
+        [TestMethod]
+        public void GetContatos()
+        {
+            var contatos = MTechneContainer.Container.Resolve<IContatoApplication>().GetContatos();
+            Assert.AreNotEqual(0, contatos.Count);
+        }
     }
 }

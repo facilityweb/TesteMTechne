@@ -1,4 +1,6 @@
-﻿using AutoMapper;
+﻿using System.Collections.Generic;
+using System.Linq;
+using AutoMapper;
 using FluentValidation;
 using MTechneTeste.Application.Interfaces;
 using MTechneTeste.Application.ViewModels;
@@ -19,6 +21,11 @@ namespace MTechneTeste.Application.AppServices
             this.contatoRepository = contatoRepository;
             this.emailContatoRepository = emailContatoRepository;
             this.telefoneContatoRepository = telefoneContatoRepository;
+        }
+
+        public IList<ContatoViewModel> GetContatos()
+        {
+            return Mapper.Map<IList<ContatoViewModel>>(this.contatoRepository.GetAll().OrderBy(x => x.Nome));
         }
         public ContatoViewModel Salvar(ContatoViewModel contatoViewModel)
         {

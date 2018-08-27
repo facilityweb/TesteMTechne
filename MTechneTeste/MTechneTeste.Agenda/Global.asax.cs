@@ -1,7 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
+﻿using MTechneTeste.Application.AutoMapper;
+using MTechneTeste.Domain.IOC;
 using System.Web.Mvc;
 using System.Web.Routing;
 
@@ -13,6 +11,8 @@ namespace MTechneTeste.Agenda
         {
             AreaRegistration.RegisterAllAreas();
             RouteConfig.RegisterRoutes(RouteTable.Routes);
+            MTechneContainer.Container = ContainerConfig.Configure();
+            AutoMapperConfig.RegisterMappings();
         }
     }
 }

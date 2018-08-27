@@ -7,6 +7,5 @@
         public int ClassificacaoId { get; set; }
         public int ContatoId { get; set; }
         public ClassificacaoViewModel Classificacao { get; set; }
-        public ContatoViewModel Contato { get; set; }
     }
 }
